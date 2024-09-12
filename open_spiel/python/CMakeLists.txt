@@ -87,6 +87,8 @@ set(PYTHON_BINDINGS ${PYTHON_BINDINGS}
   pybind11/games_backgammon.h
   pybind11/games_bargaining.cc
   pybind11/games_bargaining.h
+  pybind11/games_bertrand_oligopoly.cc
+  pybind11/games_bertrand_oligopoly.h
   pybind11/games_bridge.cc
   pybind11/games_bridge.h
   pybind11/games_chess.cc

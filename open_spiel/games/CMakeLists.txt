@@ -9,6 +9,8 @@ set(GAME_SOURCES
   battleship/battleship.h
   battleship/battleship_types.h
   battleship/battleship_types.cc
+  bertrand_oligopoly/bertrand_oligopoly.cc
+  bertrand_oligopoly/bertrand_oligopoly.h
   blackjack/blackjack.cc
   blackjack/blackjack.h
   blotto/blotto.cc
@@ -298,6 +300,10 @@ add_test(bargaining_test bargaining_test)
 add_executable(battleship_test battleship/battleship_test.cc ${OPEN_SPIEL_OBJECTS}
                $<TARGET_OBJECTS:tests>)
 add_test(battleship_test battleship_test)
+
+add_executable(bertrand_oligopoly_test bertrand_oligopoly/bertrand_oligopoly_test.cc ${OPEN_SPIEL_OBJECTS}
+               $<TARGET_OBJECTS:tests>)
+add_test(bertrand_oligopoly_test bertrand_oligopoly_test)
 
 add_executable(blackjack_test blackjack/blackjack_test.cc ${OPEN_SPIEL_OBJECTS}
                $<TARGET_OBJECTS:tests>)

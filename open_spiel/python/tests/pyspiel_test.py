@@ -29,6 +29,7 @@ EXPECTED_GAMES = frozenset([
     "backgammon",
     "bargaining",
     "battleship",
+    "bertrand_oligopoly",
     "blackjack",
     "blotto",
     "breakthrough",

@@ -34,6 +34,7 @@
 #include "open_spiel/python/pybind11/games_backgammon.h"
 #include "open_spiel/python/pybind11/games_bargaining.h"
 #include "open_spiel/python/pybind11/games_bridge.h"
+#include "open_spiel/python/pybind11/games_bertrand_oligopoly.h"
 #include "open_spiel/python/pybind11/games_chess.h"
 #include "open_spiel/python/pybind11/games_colored_trails.h"
 #include "open_spiel/python/pybind11/games_dots_and_boxes.h"
@@ -644,6 +645,7 @@ PYBIND11_MODULE(pyspiel, m) {
   init_pyspiel_game_transforms(m);          // Game transformations.
   init_pyspiel_games_backgammon(m);         // Backgammon game.
   init_pyspiel_games_bargaining(m);         // Bargaining game.
+  init_pyspiel_games_bertrand_oligopoly(m); // Bertrand Oligopoly game.
   init_pyspiel_games_bridge(m);  // Game-specific functions for bridge.
   init_pyspiel_games_chess(m);   // Chess game.
   init_pyspiel_games_colored_trails(m);   // Colored Trails game.
